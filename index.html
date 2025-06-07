@@ -1,26 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Owen Fankhauser - Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
-    h1 { color: #333; }
-  </style>
-</head>
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Owen Fankhauser | Portfolio</title> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head> 
+
 <body>
-  <h1>Owen Fankhauser</h1>
-  <p>Senior Computer Science Student | Game Developer | Musician</p>
+        <!-- Header section -->
+        <header class="hero-header">
+          <div class="overlay">
+            <div class="container-fluid h-100">
+              <div class="row h-100 align-items-start text-white">
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Shrimp Shop:</strong> A game made in Godot 4.4 featuring shrimp breeding and shop management.</li>
-    <li><strong>3D Room Generator Plugin:</strong> A Godot plugin to procedurally generate room layouts.</li>
-    <!-- Add more projects -->
-  </ul>
+                <!-- Left Column -->
+                <div class="col-md-6 p-5">
+                  <h2>Hi there, I'm </h2>
+                  <h1 style="padding-left: 2rem; font-family: Georgia, serif; font-weight: 800; font-size: 80px; color: #ad8350;">
+                    <span style="display:inline-block; width:30px;"></span>Owen Fankhauser
+                  </h1>
+                  <p class="lead">
+                    <br>Email: <a href="mailto:owen@fankhausers.com" class="text-white">owen@fankhausers.com</a><br>
+                    Phone: (513) 273-0083<br>
+                    Follow me on: 
+                    <a href="https://github.com/owenfankhauser" target="_blank">
+                      <img src="images/github_logo.png" alt="GitHub logo" style="height: 30px; vertical-align: middle; margin-right: 5px;">
+                    </a> | 
+                    <a href="https://www.linkedin.com/in/owen-fankhauser-378b3a250/" target="_blank">
+                      <img src="images/linkedin_logo.png" alt="LinkedIn Logo" style="height: 30px; vertical-align: middle; margin-right: 5px;">
+                    </a> | 
+                    <a href="https://miamioh.joinhandshake.com/profiles/8299qe" target="_blank">
+                      <img src="images/handshake_logo.png" alt="Handshake Logo" style="height: 30px; vertical-align: middle; margin-right: 5px;">
+                    </a>
+                  </p>
+                  <h4 class="fw-semibold text-uppercase">About Me</h4>
+                  <p class="lead">
+                    I'm a recent graduate from Miami University with a passion for creative problem solving, 
+                    programming, and technology. I enjoy game development, home-labbing, and creating 
+                    interactive experiences for users.
+                  </p>
+                  <h4 class="fw-semibold text-uppercase mt-4">Projects</h4>
+                  <a href="projects.html" class="btn btn-outline-light btn-sm mt-2">View My Projects</a>
+                </div>
 
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>GitHub: <a href="https://github.com/owenfankhauser">github.com/owenfankhauser</a></p>
+                <!-- Right Column (optional placeholder) -->
+                <div class="col-md-6 p-5"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">My Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="qualifications.html">Education & Experience</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- About Me -->
+        <section class="mt-5">
+          <h2 class="section-title">A little more about me...</h2>
+          <p>I graduated from Miami University May 17th, 2025 with my Bachelor's in Computer Science 
+            and a General Business Minor. During my time at Miami, I picked up a variety of different 
+            interests as I progressed through the curriculum. In particular, I enjoyed 
+            UI/UX development and answer-set programming. I was inspired by creating effective front-end 
+            tools that allowed users to intuitively accomplish their tasks while minimizing confusion and 
+            frustration. This ultimately led to an interest in game development in my Senior year. While
+            attending Miami's Farmer School of Business, I quickly learned and applied Team Management 
+            and Team Building skills in Agile development settings to effiently lead or participate in group
+            projects.
+            When I wasn't studying, I acted as an independent contractor and worked in a local hardware store. 
+            Between these two positions, I learned to develop trade skills like locksmithing. This was a perfect 
+            environment to learn to network, develop customer service skills, and learn to work with different 
+            teams or individual clients. 
+          </p>
+        </section>
+
+        <!-- Projects -->
+        <section class="mt-5">
+          <h2 class="section-title">Recent Projects</h2>
+          <p>The following are some of my favorite projects from both Miami University or my own hobbies.</p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images\shrimp.webp" class="card-img-top" alt="Screenshot of Shrimp Shop game">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Shrimp Shop</h5>
+                  <p class="card-text">A Godot-based shrimp shop management game with genetics, AI, and bioluminescent raves.</p>
+                  <a href="https://github.com/owenfankhauser/shrimp-shop" class="btn btn-outline-success mt-auto">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images\shrimp.webp" class="card-img-top" alt="Screenshot of Shrimp Shop game">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Shrimp Shop</h5>
+                  <p class="card-text">A Godot-based shrimp shop management game with genetics, AI, and bioluminescent raves.</p>
+                  <a href="https://github.com/owenfankhauser/shrimp-shop" class="btn btn-outline-success mt-auto">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images\shrimp.webp" class="card-img-top" alt="Screenshot of Shrimp Shop game">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Shrimp Shop</h5>
+                  <p class="card-text">Work in Progress. A Godot-based shrimp shop management game with genetics, AI, and bioluminescent raves.</p>
+                  <a href="https://github.com/owenfankhauser/shrimp-shop" class="btn btn-outline-success mt-auto">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-end">
+            <a href="projects.html" class="text-decoration-none">More &raquo;</a>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="mt-5">
+          <h2 class="section-title">Skills</h2>
+          <p>Proficient in C++, Java, Python, HTML/CSS, JavaScript, and SQL.</p>
+          <iframe class="resume-embed" src="resume.pdf" title="Resume PDF">
+            <p>Your browser does not support PDFs. <a href="resume.pdf">Download the resume here</a>.</p>
+          </iframe>
+        </section>
+
+        <!-- Awards -->
+        <section class="mt-5">
+          <h2 class="section-title">Awards</h2>
+          <ul>
+            <li>Farmer School of Business Dean’s List 2023–2025</li>
+            <li><a href="https://miamioh.edu/fsb/academics/miami-prime/index.html">Miami PRIME</a> Business Consultation Competition Winner 2024</li>
+            <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7326658599080865792/">Business Model Pitch</a> Competition Winner 2025</li>
+
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer mt-5">
+          <p>Owen Fankhauser &mdash; 2025</p>
+          <p>Email: <a href="mailto:fankhaod@miamioh.edu">fankhaod@miamioh.edu</a> | 
+            <a href="https://github.com/owenfankhauser" target="_blank">
+              <img src="images/github_logo.png" alt="GitHub logo" style="height: 25px; vertical-align: middle; margin-right: 5px;">GitHub Profile | 
+            </a>
+            <a href="https://www.linkedin.com/in/owen-fankhauser-378b3a250/" target="_blank">
+              <img src="images/linkedin_logo.png" alt="LinkedIn Logo" style="height: 25px; vertical-align: middle; margin-right: 5px;">LinkedIn Profile | 
+            </a>
+            <a href="https://miamioh.joinhandshake.com/profiles/8299qe" target="_blank">
+              <img src="images/handshake_logo.png" alt="Handshake Logo" style="height: 25px; vertical-align: middle; margin-right: 5px;">Handshake Profile
+            </a>
+          </p>
+        </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
